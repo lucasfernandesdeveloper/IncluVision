@@ -20,5 +20,6 @@
     </head>
     <body class="font-sans antialiased static bg-gray-100">
         @yield('tela-inicial')
+        <script src="{{ asset('build/assets/scripts/Controllers/controles.js') }}"></script>
     </body>
 </html>
