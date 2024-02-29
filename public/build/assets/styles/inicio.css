@@ -1,0 +1,62 @@
+body{
+  background-color: rgb(243 244 246);
+}
+
+.autenticacao-botoes{
+    position: fixed;
+    right: 2rem;
+    top: 1rem;
+}
+
+.autenticacao-botoes a{
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.tela-inicio{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.logo-slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(3, 3, 3);
+}
+
+
+@keyframes Clique {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.99);
+    }
+
+    100% {
+        transform: scale(1);
+      }
+  }
+
+.controle-continuar{
+  animation: Clique 3s ease-in-out infinite;
+  font-size: 1.1rem ;
+}
+
+.dedo{
+  margin: 1rem;
+}

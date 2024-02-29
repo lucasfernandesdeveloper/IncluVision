@@ -1,0 +1,130 @@
+@keyframes Clique {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+      transform: scale(1);
+    }
+}
+
+.tela{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 8rem;
+}
+
+.tecla{
+  padding: 0rem 0.4rem 0.1rem 0.4rem;
+  margin: 0 0.3rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
+
+.pular-tutorial{
+  animation: Clique 3s ease-in-out  infinite;
+  margin-top: 2rem;
+}
+
+.tutorial-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80vw;
+}
+
+.quadro-configuracoes{
+  margin: 1rem;
+  width: 8rem;
+  height: 2rem;
+  display: flex;
+
+}
+
+.configuracoes{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30rem;
+}
+
+
+
+/*Tela de configurações fontes*/
+
+.font-sizes-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+}
+
+.font-size-box {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  margin: 4px;
+}
+
+.font-size-16 {
+  font-size: 1rem;
+}
+
+.font-size-20 {
+  font-size: 1rem;
+}
+
+.font-size-24 {
+  font-size: 1rem;
+}
+
+
+/*Tela de configurações cores*/
+.contrast-colors-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 8rem;
+  height: 3rem;
+}
+
+.contrast-color-box {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+}
+
+.black-white {
+  background-color: #000;
+  color: #fff;
+}
+
+.custom-color-1 {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.custom-color-2 {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+
+.controle-registrar a{
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
