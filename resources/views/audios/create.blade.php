@@ -1,6 +1,6 @@
 <?php
 
-require_once "E:/xampp/htdocs/Incluvision-29-01/vendor/autoload.php";
+require '../vendor/autoload.php';
 
 // Crie um cliente para o serviço Texto para Fala
 use Google\Cloud\TextToSpeech\V1\AudioConfig;
@@ -10,7 +10,7 @@ use Google\Cloud\TextToSpeech\V1\VoiceSelectionParams;
 use Google\Cloud\TextToSpeech\V1\AudioEncoding;
 
 // Carregue as credenciais de API
-$credentials_json = file_get_contents('E:/xampp/htdocs/Incluvision-29-01/resources/views/audios/opportune-eye-411223-d391dd6401fa.json');
+$credentials_json = file_get_contents( '../resources/views/audios/opportune-eye-411223-d391dd6401fa.json');
 $credentials_array = json_decode($credentials_json, true);
 
 // Crie uma instância do cliente TextToSpeech
@@ -43,7 +43,10 @@ $response = $textToSpeechClient->synthesizeSpeech(
 $audio = $response->getAudioContent();
 
 // Nome do arquivo
-$nomeArquivo = 'E:/xampp/htdocs/Incluvision-29-01/resources/views/audios/historia/audio-inicio.mp3';
+
+$nomeArquivo = '../resources/views/audios/historia/audio-inicio.wav';
+
+
 
 // Verifica se o arquivo já existe
 if (!file_exists($nomeArquivo)) {
@@ -69,7 +72,7 @@ if (!file_exists($nomeArquivo)) {
 $textToSpeechClient->close();
 
 
-header(sprintf("Location: ../dashboard"));
+header(sprintf("Location: ../inicio"));
 exit();
 
 

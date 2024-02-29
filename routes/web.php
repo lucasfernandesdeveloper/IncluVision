@@ -22,6 +22,11 @@ Route::get('/introducao', function () {
     return view('layouts/introducao');
 });
 
+
+Route::get('/create/audio', function () {
+    return view('audios/create');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

@@ -1,3 +1,16 @@
+function tocarAudioDeDezEmDezSegundos() {
+    const audio = new Audio("{{ asset('build/assets/audios/audio-inicio.mp3')}}")
+
+    const intervalo = 10000; // 1000 milisegundos em 1 segundo
+
+    setInterval(() => {
+      audio.currentTime = 0;
+      audio.play();
+    }, intervalo);
+  }
+
+tocarAudioDeDezEmDezSegundos();
+
 let numeroCliques = 0
 document.addEventListener('click', () => {
 const legenda = document.getElementById('legenda')

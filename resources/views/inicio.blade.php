@@ -30,7 +30,9 @@
                 <p>"Porque a  inclusão é para todos, e a visão vai muito além do que os olhos enxergam."</p>
             </div>
 
-            <div class="flex mt-24 items-center justify-center"><p>Pressione a tecla <span class="rounded border-2 border-slate-800 py-1 px-3">Enter</span> para iniciar</p></div>
+            <div class="flex mt-24 items-center justify-center"><p>Pressione a tecla <span class="rounded border-2 border-slate-800 py-1 px-3">Enter</span> para iniciar</p>
+      
+        </div>
 
     </div>
 
