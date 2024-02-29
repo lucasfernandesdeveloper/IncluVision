@@ -1,5 +1,6 @@
 function controleVoz() {
   audioInicio.play()
+  console.log('Iniciou audio - Debug')
 }
 
 /*const welcomeLayout = document.getElementById('welcomeLayout');
