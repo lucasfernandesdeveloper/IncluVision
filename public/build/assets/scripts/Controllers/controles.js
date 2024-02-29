@@ -1,7 +1,24 @@
-function controleVoz() {
-  audioInicio.play()
-  console.log('Iniciou audio - Debug')
+let numeroCliques = 0
+document.addEventListener('click', () => {
+const legenda = document.getElementById('legenda')
+
+    function atualizarLegenda(){
+        numeroCliques ++
+        switch (numeroCliques){
+            case 1:
+                legenda.textContent = "legenda número 1"
+            break;
+            case 2:
+                legenda.textContent = "legenda número 2"
+            break;
+            default:
+            legenda.textContent = "legenda default"
+        }
 }
+
+atualizarLegenda()
+
+});
 
 /*const welcomeLayout = document.getElementById('welcomeLayout');
 const tutorial1Layout = document.getElementById('tutorial1Layout');
