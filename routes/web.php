@@ -27,6 +27,10 @@ Route::get('/create/audio', function () {
     return view('audios/create');
 });
 
+Route::get('/create/fala', function () {
+    return view('teste_fala/speech_to_text');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
