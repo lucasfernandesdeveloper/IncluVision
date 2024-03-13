@@ -27,5 +27,5 @@
             </div>
         </div>
     </body>
-    <script src="{{asset('build/assets/scripts/Views/voz.js')}}"></script>
+    <script src="{{asset('build/assets/scripts/voz.js')}}"></script>
 </html>

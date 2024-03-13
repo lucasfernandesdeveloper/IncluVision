@@ -10,9 +10,9 @@
             <x-input-label for="email" :value="__('E-mail')" />
             <div class="flex">
                 <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-                <button id="startButton" class="m-2 p-2 border border-gray-700 ">S</button>
+                <button id="startButton" class="ml-2 p-2 border border-gray-700 rounded">S</button>
             </div>
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+            <x-input-error :messages="$errors->get('email')" class="mt-2"/>
         </div>
 
         <!-- Password -->

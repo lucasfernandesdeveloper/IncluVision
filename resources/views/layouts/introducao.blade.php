@@ -13,9 +13,10 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <link rel="stylesheet" href="{{ asset('build/assets/styles/componentes.css')}}">
-        <script src="{{ asset('build/assets/scripts/Controllers/controles.js')}}"></script>
+        <script src="{{ asset('build/assets/scripts/controles.js')}}"></script>
 
         <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -43,11 +44,21 @@
             </div>
             @endif
 
-            <div class="flex flex-col items-center justify-center">
-                <img src="{{ asset('build/assets/images/logos/logo-grande.svg') }}" alt="Logo da plataforma Incluvision">
+
+            <div class="flex items-center justify-center absolute left-4 top-32">
+                <div class="w-48">
+                    <img class="w-48" src="{{ asset('build/assets/images/elementos/mascote.svg') }}" alt="Imagem de um cachorro-robô, o mascote da incluvision">
+                </div>
+                <div class=" chat chat-start">
+                    <div class="chat-bubble"><p id="legenda" >Olá! eu sou o ---, o cão-guia que irá te auxiliar na sua jornada de aprendizado</p></div>
+                </div>
+            </div>
+
+            <!-- <div class="flex flex-col items-center justify-center">
+                <img src="{{ asset('build/assets/images/logos/logo-grande.svg') }}" alt="Logo da plataforma Incluvision">-->
 
                 <!-- Parte que será alterada no js para mudar as legendas -->
-                <div class="flex mt-24 items-center justify-center"><p id="legenda" >Olá! eu sou a Vi, a assistente virtual da Incluvision e irei te auxiliar na sua jornada de aprendizado</p></div>
+                <div class="flex mt-24 items-center justify-center"> </div>
 
         </div>
     </body>

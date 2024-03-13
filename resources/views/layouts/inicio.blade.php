@@ -20,6 +20,15 @@
     </head>
     <body class="font-sans antialiased static bg-gray-100">
         @yield('tela-inicial')
-        <script src="{{ asset('build/assets/scripts/Controllers/controles.js') }}"></script>
+        <script src="{{ asset('build/assets/scripts/controles.js') }}"></script>
     </body>
+    <script>
+
+document.addEventListener('keyup', (e) => {
+    if (e.code === 'Enter') {
+        window.location.href = "/introducao";
+    }
+  });
+
+    </script>
 </html>
